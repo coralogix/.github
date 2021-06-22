@@ -1,0 +1,11 @@
+{
+    "name": "Python Library CI",
+    "description": "Python test and converage",
+    "iconName": "example-icon",
+    "categories": [
+        "Python"
+    ],
+    "filePatterns": [
+        "requirements.txt"
+    ]
+}
