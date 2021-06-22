@@ -6,6 +6,6 @@
         "Python"
     ],
     "filePatterns": [
-        "requirements.txt"
+        "setup.py"
     ]
 }
