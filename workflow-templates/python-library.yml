@@ -3,7 +3,7 @@ name: Python Library CI
 on:
   push:
     branches: [ $default-branch ]
-    tags: *
+    tags: [*]
   pull_request:
     branches: [ $default-branch ]
 
