@@ -1,0 +1,11 @@
+{
+    "name": "Trigger rebuuild of coralogix-sdk",
+    "description": "Used for protobuf libraries",
+    "iconName": "example-icon",
+    "categories": [
+        "Protobuf"
+    ],
+    "filePatterns": [
+        "buf.yaml"
+    ]
+}
