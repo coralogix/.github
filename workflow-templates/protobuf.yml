@@ -1,3 +1,6 @@
+#This workflow will trigger a repository dispatch event to coralogix sdk whenever a new tag is released.
+#The event will be picked up by coralogix-sdk and internally trigger a PR assigned to the person that released the tag
+name: protobuf_update
 on:
   push:
     tags:
@@ -7,11 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           event-type: protobuf_update
           repository: coralogix/coralogix-sdk
-          client-payload:
-            repo: github.repository
-            version: github.ref_name
+          client-payload: '{"repo": "${{ github.repository }}", "version": "${{ github.ref_name }}", "creator": "${{ github.actor }}"}'

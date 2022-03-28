@@ -1,7 +1,7 @@
 {
     "name": "Python Library CI",
     "description": "Python test and converage",
-    "iconName": "example-icon",
+    "iconName": "coralogix-icon",
     "categories": [
         "Python"
     ],
