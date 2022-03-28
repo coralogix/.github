@@ -1,7 +1,7 @@
 {
-    "name": "Trigger rebuuild of coralogix-sdk",
-    "description": "Used for protobuf libraries",
-    "iconName": "example-icon",
+    "name": "Publish protobuf tag version",
+    "description": "Dispatches an event to coralogix-sdk which will trigger a PR with protodep version bump whenever there is a new tag release",
+    "iconName": "coralogix-icon",
     "categories": [
         "Protobuf"
     ],
